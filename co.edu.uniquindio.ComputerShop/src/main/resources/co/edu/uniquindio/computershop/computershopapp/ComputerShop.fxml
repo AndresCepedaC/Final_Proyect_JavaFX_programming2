@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="919.0" prefWidth="1322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.ComputerStoreController">
+   <children>
+      <TabPane prefHeight="919.0" prefWidth="1328.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Computador">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <SplitPane layoutX="14.0" layoutY="7.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="790.0">
+                              <items>
+                                  <fx:include source="Computer.fxml" />
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Raton">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <SplitPane layoutX="14.0" layoutY="7.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="790.0">
+                            <items>
+                                <fx:include source="Mouse.fxml" />
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Teclado">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <SplitPane layoutX="14.0" layoutY="7.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="790.0">
+                              <items>
+                                  <fx:include source="KeyBoard.fxml" />
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Monitor">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <SplitPane layoutX="14.0" layoutY="7.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="790.0">
+                              <items>
+                                  <fx:include source="Monitor.fxml" />
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Empleado">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <SplitPane layoutX="14.0" layoutY="7.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="790.0">
+                              <items>
+                                  <fx:include source="Employee.fxml" />
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Cliente">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                          <SplitPane layoutX="14.0" layoutY="7.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="790.0">
+                              <items>
+                                  <fx:include source="Customer.fxml" />
+                              </items>
+                          </SplitPane>
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

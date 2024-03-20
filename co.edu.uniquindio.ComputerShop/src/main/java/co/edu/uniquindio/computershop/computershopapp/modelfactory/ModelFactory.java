@@ -1,17 +1,19 @@
 package co.edu.uniquindio.computershop.computershopapp.modelfactory;
 
-import co.edu.uniquindio.computershop.computershopapp.model.ComputerShop;
+import co.edu.uniquindio.computershop.computershopapp.model.ComputerStore;
 
 public class ModelFactory {
-    ModelFactory modelFactory;
+    private static ModelFactory modelFactory;
+    private ComputerStore computerStore;
     private ModelFactory (){
-        ComputerShop computerShop = new ComputerShop();
+        computerStore = new ComputerStore();
         inicializarDatosPrueba();
     }
-    public void getInstance(){
+    public static ModelFactory getInstancia(){
         if (modelFactory == null){
             modelFactory = new ModelFactory();
         }
+        return modelFactory;
     }
     private void inicializarDatosPrueba() {
     }
