@@ -6,9 +6,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.MouseController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="852.0" prefWidth="1192.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.MouseController">
+    <children>
+        <TableView fx:id="tcTableView" layoutX="23.0" layoutY="279.0" prefHeight="528.0" prefWidth="1139.0">
+            <columns>
+                <TableColumn fx:id="tcSensor" prefWidth="282.0" text="Sensor" />
+                <TableColumn fx:id="tcCantidadBotones" prefWidth="151.0" text="Cantidad de botones" />
+                <TableColumn fx:id="tcMarca" prefWidth="257.0" text="Marca" />
+                <TableColumn fx:id="tcIDProduct" minWidth="0.0" prefWidth="251.0" text="ID de producto" />
+            <TableColumn fx:id="tcCantidad" prefWidth="197.0" text="Cantidad" />
+            </columns>
+        </TableView>
+        <Label layoutX="70.0" layoutY="52.0" text="Sensor:" />
+        <Label layoutX="70.0" layoutY="122.0" text="ID de producto:" />
+        <Label layoutX="618.0" layoutY="52.0" text="Cantidad de botones:" />
+        <Label layoutX="617.0" layoutY="112.0" text="Marca:" />
+        <TextField fx:id="txtSensor" layoutX="185.0" layoutY="48.0" prefHeight="25.0" prefWidth="414.0" />
+        <TextField fx:id="txtMarca" layoutX="733.0" layoutY="105.0" prefHeight="25.0" prefWidth="450.0" />
+        <TextField fx:id="txtIDPoducto" layoutX="185.0" layoutY="105.0" prefHeight="25.0" prefWidth="414.0" />
+        <TextField fx:id="txtCantidadBotones" layoutX="733.0" layoutY="48.0" prefHeight="25.0" prefWidth="450.0" />
+        <Button fx:id="buttonLimpiar" layoutX="238.0" layoutY="232.0" mnemonicParsing="false" text="Limpiar casillas" />
+        <Button fx:id="buttonAgregar" layoutX="551.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
+        <Button fx:id="buttonActualizar" layoutX="853.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
+        <Button fx:id="buttonEliminar" layoutX="569.0" layoutY="815.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Eliminar" />
+      <Label layoutX="70.0" layoutY="164.0" text="Cantidad:" />
+      <TextField fx:id="txtCantidad" layoutX="185.0" layoutY="160.0" prefHeight="25.0" prefWidth="414.0" />
+    </children>
 
 </AnchorPane>

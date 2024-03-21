@@ -6,9 +6,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.CustomerController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="855.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.CustomerController">
+    <children>
+        <TableView fx:id="tcTableView" layoutX="27.0" layoutY="280.0" prefHeight="528.0" prefWidth="1144.0">
+            <columns>
+                <TableColumn fx:id="tcNombre" prefWidth="309.0" text="Nombre" />
+                <TableColumn fx:id="tcEdad" prefWidth="61.0" text="Edad" />
+                <TableColumn fx:id="tcEmail" prefWidth="250.0" text="Email" />
+                <TableColumn fx:id="tcCelular" prefWidth="266.0" text="Telefono Celular" />
+                <TableColumn fx:id="tcCedula" prefWidth="257.0" text="Cedula" />
+            </columns>
+        </TableView>
+        <Label layoutX="70.0" layoutY="52.0" text="Nombre:" />
+        <Label layoutX="70.0" layoutY="91.0" text="Cedula:" />
+        <Label layoutX="70.0" layoutY="129.0" text="Telefono celular:" />
+        <Label layoutX="618.0" layoutY="52.0" text="Edad:" />
+        <Label layoutX="617.0" layoutY="91.0" text="Email:" />
+        <TextField fx:id="txtNombre" layoutX="185.0" layoutY="48.0" prefHeight="25.0" prefWidth="414.0" />
+        <TextField fx:id="txtCedula" layoutX="185.0" layoutY="87.0" prefHeight="25.0" prefWidth="414.0" />
+        <TextField fx:id="txtEmail" layoutX="724.0" layoutY="87.0" prefHeight="25.0" prefWidth="450.0" />
+        <TextField fx:id="txtCelular" layoutX="185.0" layoutY="125.0" prefHeight="25.0" prefWidth="414.0" />
+        <TextField fx:id="txtEdad" layoutX="724.0" layoutY="48.0" prefHeight="25.0" prefWidth="450.0" />
+        <Button fx:id="buttonLimpiar" layoutX="238.0" layoutY="232.0" mnemonicParsing="false" text="Limpiar casillas" />
+        <Button fx:id="buttonAgregar" layoutX="551.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
+        <Button fx:id="buttonActualizar" layoutX="853.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
+        <Button fx:id="buttonEliminar" layoutX="569.0" layoutY="821.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Eliminar" />
+    </children>
 
 </AnchorPane>

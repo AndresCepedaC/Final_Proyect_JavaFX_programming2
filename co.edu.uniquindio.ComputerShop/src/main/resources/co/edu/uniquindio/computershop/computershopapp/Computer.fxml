@@ -6,9 +6,38 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.ComputerController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="867.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.ComputerController">
+   <children>
+      <TableView fx:id="tcTableView" layoutX="45.0" layoutY="279.0" prefHeight="528.0" prefWidth="1144.0">
+        <columns>
+          <TableColumn fx:id="tcProcessor" prefWidth="212.0" text="Procesador" />
+          <TableColumn fx:id="tcSSD" prefWidth="102.0" text="Capacidad SSD" />
+            <TableColumn fx:id="tcRAM" prefWidth="122.0" text="Capacidad de RAM" />
+            <TableColumn fx:id="tcMotherBoard" prefWidth="209.0" text="Placa madre" />
+            <TableColumn fx:id="tcGraphicCard" prefWidth="177.0" text="Tarjeta grafica" />
+            <TableColumn fx:id="tcMarca" prefWidth="143.0" text="Marca" />
+            <TableColumn fx:id="tcIDProduct" minWidth="0.0" prefWidth="178.0" text="ID de producto" />
+        </columns>
+      </TableView>
+      <Label layoutX="70.0" layoutY="52.0" text="Procesador:" />
+      <Label layoutX="70.0" layoutY="91.0" text="Capacidad SSD:" />
+      <Label layoutX="70.0" layoutY="129.0" text="Capacidad de RAM:" />
+      <Label layoutX="70.0" layoutY="169.0" text="ID de producto:" />
+      <Label layoutX="618.0" layoutY="52.0" text="Gabinete:" />
+      <Label layoutX="617.0" layoutY="91.0" text="Placa madre:" />
+      <Label layoutX="617.0" layoutY="129.0" text="Tarjeta grafica:" />
+      <Label layoutX="618.0" layoutY="169.0" text="Marca:" />
+      <TextField fx:id="txtProcessor" layoutX="185.0" layoutY="48.0" prefHeight="25.0" prefWidth="414.0" />
+      <TextField fx:id="txtSSD" layoutX="185.0" layoutY="87.0" prefHeight="25.0" prefWidth="414.0" />
+      <TextField fx:id="txtMarca" layoutX="724.0" layoutY="165.0" prefHeight="25.0" prefWidth="450.0" />
+      <TextField fx:id="txtGraphicCard" layoutX="724.0" layoutY="125.0" prefHeight="25.0" prefWidth="450.0" />
+      <TextField fx:id="txtMotherBoard" layoutX="724.0" layoutY="87.0" prefHeight="25.0" prefWidth="450.0" />
+      <TextField fx:id="txtRAM" layoutX="185.0" layoutY="125.0" prefHeight="25.0" prefWidth="414.0" />
+      <TextField fx:id="txtIDPoducto" layoutX="185.0" layoutY="165.0" prefHeight="25.0" prefWidth="414.0" />
+      <TextField fx:id="txtCabinet" layoutX="724.0" layoutY="48.0" prefHeight="25.0" prefWidth="450.0" />
+      <Button fx:id="buttonLimpiar" layoutX="238.0" layoutY="232.0" mnemonicParsing="false" text="Limpiar casillas" />
+      <Button fx:id="buttonAgregar" layoutX="551.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
+      <Button fx:id="buttonActualizar" layoutX="853.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
+      <Button fx:id="buttonEliminar" layoutX="569.0" layoutY="821.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Eliminar" />
+   </children>
 </AnchorPane>
