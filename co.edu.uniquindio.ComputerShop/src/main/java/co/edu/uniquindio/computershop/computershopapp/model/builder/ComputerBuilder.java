@@ -8,6 +8,7 @@ public class ComputerBuilder extends ProductBuilder<ComputerBuilder>{
     private String RAM;
     private String SSD;
     private int fans;
+    private String powerSource;
     private String graphicCard;
     private String cabinet;
 
@@ -28,6 +29,10 @@ public class ComputerBuilder extends ProductBuilder<ComputerBuilder>{
     public ComputerBuilder setSSD(String SSD) {
         this.SSD = SSD;return this;
     }
+    public ComputerBuilder setPowerSource(String powerSource){
+        this.powerSource = powerSource;
+        return this;
+    }
 
     public ComputerBuilder setFans(int fans) {
         this.fans = fans;return this;
@@ -42,6 +47,6 @@ public class ComputerBuilder extends ProductBuilder<ComputerBuilder>{
     }
     @Override
     public Computer build(){
-        return new Computer(idProduct, quantity, marca, processor, motherBoard,RAM, SSD, fans, graphicCard,cabinet);
+        return new Computer(idProduct, quantity, marca, processor, motherBoard,RAM, SSD,powerSource, fans, graphicCard,cabinet);
     }
 }
