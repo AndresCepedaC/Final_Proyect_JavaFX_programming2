@@ -6,9 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="852.0" prefWidth="1192.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.MouseController">
+<AnchorPane prefHeight="852.0" prefWidth="1192.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computerStore.computerStoreApp.controller.MouseController">
     <children>
-        <TableView fx:id="tcTableView" layoutX="23.0" layoutY="279.0" prefHeight="528.0" prefWidth="1139.0">
+        <TableView fx:id="tableMouse" layoutX="23.0" layoutY="279.0" prefHeight="528.0" prefWidth="1139.0">
             <columns>
                 <TableColumn fx:id="tcSensor" prefWidth="282.0" text="Sensor" />
                 <TableColumn fx:id="tcCantidadBotones" prefWidth="151.0" text="Cantidad de botones" />
@@ -25,12 +25,16 @@
         <TextField fx:id="txtMarca" layoutX="733.0" layoutY="105.0" prefHeight="25.0" prefWidth="450.0" />
         <TextField fx:id="txtIDPoducto" layoutX="185.0" layoutY="105.0" prefHeight="25.0" prefWidth="414.0" />
         <TextField fx:id="txtCantidadBotones" layoutX="733.0" layoutY="48.0" prefHeight="25.0" prefWidth="450.0" />
-        <Button fx:id="buttonLimpiar" layoutX="238.0" layoutY="232.0" mnemonicParsing="false" text="Limpiar casillas" />
-        <Button fx:id="buttonAgregar" layoutX="551.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
-        <Button fx:id="buttonActualizar" layoutX="853.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
+        <Button fx:id="buttonLimpiar" layoutX="237.0" layoutY="220.0" mnemonicParsing="false" text="Limpiar casillas" />
+        <Button fx:id="buttonAgregar" layoutX="569.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
+        <Button fx:id="buttonActualizar" layoutX="862.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
         <Button fx:id="buttonEliminar" layoutX="569.0" layoutY="815.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Eliminar" />
       <Label layoutX="70.0" layoutY="164.0" text="Cantidad:" />
       <TextField fx:id="txtCantidad" layoutX="185.0" layoutY="160.0" prefHeight="25.0" prefWidth="414.0" />
+      <Separator layoutX="3.0" layoutY="28.0" prefHeight="3.0" prefWidth="1185.0" />
+      <Separator layoutX="3.0" layoutY="204.0" prefHeight="3.0" prefWidth="1185.0" />
+      <Separator layoutX="3.0" layoutY="266.0" prefHeight="3.0" prefWidth="1185.0" />
+      <Label layoutX="9.0" layoutY="6.0" text="CRUD Mouse" />
     </children>
 
 </AnchorPane>

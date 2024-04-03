@@ -6,9 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="862.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computershop.computershopapp.controller.MonitorController">
+<AnchorPane prefHeight="862.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.computerStore.computerStoreApp.controller.MonitorController">
     <children>
-        <TableView fx:id="tcTableView" layoutX="27.0" layoutY="279.0" prefHeight="528.0" prefWidth="1144.0">
+        <TableView fx:id="tableMonitor" layoutX="27.0" layoutY="279.0" prefHeight="528.0" prefWidth="1144.0">
             <columns>
                 <TableColumn fx:id="tcIDProducto" prefWidth="263.0" text="ID de producto" />
                 <TableColumn fx:id="tcMarca" prefWidth="238.0" text="Marca" />
@@ -27,10 +27,14 @@
         <TextField fx:id="txtTamano" layoutX="724.0" layoutY="87.0" prefHeight="25.0" prefWidth="450.0" />
         <TextField fx:id="txtRefresh" layoutX="185.0" layoutY="125.0" prefHeight="25.0" prefWidth="414.0" />
         <TextField fx:id="txtMarca" layoutX="724.0" layoutY="48.0" prefHeight="25.0" prefWidth="450.0" />
-        <Button fx:id="buttonLimpiar" layoutX="238.0" layoutY="232.0" mnemonicParsing="false" text="Limpiar casillas" />
-        <Button fx:id="buttonAgregar" layoutX="551.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
-        <Button fx:id="buttonActualizar" layoutX="853.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
+        <Button fx:id="buttonLimpiar" layoutX="234.0" layoutY="207.0" mnemonicParsing="false" text="Limpiar casillas" />
+        <Button fx:id="buttonAgregar" layoutX="551.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Agregar" />
+        <Button fx:id="buttonActualizar" layoutX="853.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Actualizar" />
         <Button fx:id="buttonEliminar" layoutX="569.0" layoutY="821.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Eliminar" />
+      <Label layoutX="7.0" layoutY="6.0" text="CRUD Monitor" />
+      <Separator layoutX="7.0" layoutY="256.0" prefHeight="3.0" prefWidth="1185.0" />
+      <Separator layoutX="4.0" layoutY="175.0" prefHeight="3.0" prefWidth="1185.0" />
+      <Separator layoutX="3.0" layoutY="30.0" prefHeight="3.0" prefWidth="1185.0" />
     </children>
 
 </AnchorPane>
